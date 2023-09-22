@@ -1,9 +1,14 @@
 <template>
     <div class="nft-item">
         <div class="nft-item__picture"><img src="../../public/images/azuki.png" alt="pics"></div>
-        <div class="nft-item__collection">{{ nft.collectionName }}</div>
-        <div class="nft-item__name">{{ nft.nftName }}</div>
-        <div class="nft-item__price">{{ nft.price }}</div>
+        <div class="nft-item__description">
+            <div class="nft-item__collection">{{ nft.collectionName }}</div>
+            <div class="nft-item__name">{{ nft.nftName }}</div>
+            <div class="nft-item__price">{{ nft.price }}</div>
+        </div>
+        <div class="nft-item__button">
+            <button>Buy Now</button>
+        </div>
     </div>
 </template>
 <script>
@@ -21,12 +26,44 @@ export default {
         padding: 20px;
         border: 1px solid #1e2023;
         border-radius: 10%;
+        background-color: #141417;;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .nft-item__picture img{
-        width: 150px;
+        width: 250px;
+        border-radius: 10%;
     }
+
+    .nft-item__description {
+        width: 100%;
+        justify-content: start;
+        margin-bottom: 16px;
+    }
+
+    .nft-item__collection {
+        font-size: 12px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        color: #9f9f9f;
+    }
+
+    .nft-item__name {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .nft-item__button {
+        width: 100%;
+    }
+
+    .nft-item__button button {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        background-color: #7c81da;
+    }
+
 </style>

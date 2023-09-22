@@ -15,10 +15,10 @@ export default {
   data(){
     return {
       nfts: [
-        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #3238", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #5218", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #1837", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #1837", price: "24.64 ETH", src: "../public/images/azuki.png"}
+        {id: 1, collectionName: "Azuki", nftName: "Azuki #3238", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Azuki", nftName: "Azuki #5218", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Azuki", nftName: "Azuki #1837", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Azuki", nftName: "Azuki #1837", price: "24.64 ETH", src: "../public/images/azuki.png"}
       ]
     }
   }
