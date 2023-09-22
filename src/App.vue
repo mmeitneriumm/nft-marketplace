@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>NFT's Gallery</h1>
+    <nft-list :nfts="nfts"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import nftList from './components/nftList.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    nftList
+  },
+  data(){
+    return {
+      nfts: [
+        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #3238", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #5218", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #1837", price: "24.64 ETH", src: "../public/images/azuki.png"},
+        {id: 1, collectionName: "Bored Ape Yacht Club", nftName: "Bored Ape Yacht Club #1837", price: "24.64 ETH", src: "../public/images/azuki.png"}
+      ]
+    }
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #18191c;
+  margin: 20px;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
 </style>
