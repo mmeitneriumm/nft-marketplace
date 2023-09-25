@@ -7,13 +7,16 @@
             <div class="nft-item__price">{{ nft.price }}</div>
         </div>
         <div class="nft-item__button">
-            <button>Buy Now</button>
-            
+            <!-- <button>Details</button> -->
+            <vs-button color="primary" type="filled">More details</vs-button>
         </div>
     </div>
 </template>
 <script>
+import { vsButton } from 'vuesax3'
+
 export default {
+    components: vsButton,
     props: {
         nft: {
             type: Object,
@@ -66,6 +69,7 @@ export default {
         border: none;
         padding: 10px;
         background-color: #7c81da;
+        cursor: pointer;
     }
 
 </style>
