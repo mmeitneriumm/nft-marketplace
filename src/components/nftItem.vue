@@ -8,7 +8,7 @@
         </div>
         <div class="nft-item__button">
             <!-- <button>Details</button> -->
-            <vs-button color="primary" type="filled">More details</vs-button>
+            <vs-button color="primary" type="filled" @click="$router.push(`/gallery/${nft.identifier}`)">More details</vs-button>
         </div>
     </div>
 </template>
