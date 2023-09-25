@@ -39,4 +39,8 @@
         padding-left: 20px;
         cursor: pointer;
     }
+
+    .vs-navbar--item{
+        color: white !important;
+    }
 </style>
