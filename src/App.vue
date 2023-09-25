@@ -33,9 +33,9 @@ export default {
     left: -10rem;
     width: 30rem;
     height: 10rem;
-    background: #0000ad;
+    background: #2a2a8f;
     filter: blur(10rem);
-    content: " ";
+    content: "";
     border-radius: 50% / 50%;
   }
 
@@ -46,9 +46,9 @@ export default {
     right: -10rem;
     width: 30rem;
     height: 10rem;
-    background: #4900a1;
+    background: #4d055d;
     filter: blur(10rem);
-    content: " ";
+    content: "";
     border-radius: 50% / 50%;
     }
   
