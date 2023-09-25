@@ -1,13 +1,14 @@
 <template>
     <div class="nft-item">
-        <div class="nft-item__picture"><img src="../../public/images/azuki.png" alt="pics"></div>
+        <div class="nft-item__picture"><img :src="nft.image_url" alt="pics"></div>
         <div class="nft-item__description">
-            <div class="nft-item__collection">{{ nft.collectionName }}</div>
-            <div class="nft-item__name">{{ nft.nftName }}</div>
+            <div class="nft-item__collection">{{ nft.collection }}</div>
+            <div class="nft-item__name">{{ nft.name }}</div>
             <div class="nft-item__price">{{ nft.price }}</div>
         </div>
         <div class="nft-item__button">
             <button>Buy Now</button>
+            
         </div>
     </div>
 </template>
@@ -30,6 +31,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 10px;
     }
 
     .nft-item__picture img{

@@ -1,6 +1,6 @@
 <template>
     <div v-if="nfts.length > 0" class="nft-list">
-        <nft-item :nft="nft" v-for="nft in nfts" :key="nft.id" />
+        <nft-item :nft="nft" v-for="nft in nfts" :key="nft.identifier" />
     </div>
     <div v-else>
         <p>no nft</p>
@@ -24,5 +24,6 @@ export default {
         display: flex;
         justify-content: space-between;
         margin: 30px;
+        flex-wrap: wrap;
     }
 </style>

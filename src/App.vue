@@ -7,19 +7,27 @@
 
 <script>
 import nftList from './components/nftList.vue';
+import { fetchNFTData } from './api/api'
+
 export default {
   name: 'App',
   components: {
     nftList
   },
+
+  async created() {
+    try {
+      const nftData = await fetchNFTData();
+      this.nfts = nftData.nfts
+      console.log(this.nfts)
+    } catch (error) {
+      console.error('Ошибка при получении данных из API:', error);
+    }
+  },
+
   data(){
     return {
-      nfts: [
-        {id: 1, collectionName: "Azuki", nftName: "Azuki #3238", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Azuki", nftName: "Azuki #5218", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Azuki", nftName: "Azuki #1837", price: "24.64 ETH", src: "../public/images/azuki.png"},
-        {id: 1, collectionName: "Azuki", nftName: "Azuki #1837", price: "24.64 ETH", src: "../public/images/azuki.png"}
-      ]
+      nfts: null
     }
   }
 }
