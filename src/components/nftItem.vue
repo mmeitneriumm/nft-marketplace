@@ -30,7 +30,7 @@ export default {
         padding: 20px;
         border: 1px solid #1e2023;
         border-radius: 10%;
-        background-color: #141417;;
+        background-color: #141417;
         display: flex;
         flex-direction: column;
         align-items: center;
