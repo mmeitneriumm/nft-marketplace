@@ -66,6 +66,7 @@ export default {
       background-color: #141417;
       border-radius: 20px;
       padding: 10px;
+      width: fit-content;
     }
 
     .nft-detail__picture {
@@ -102,7 +103,7 @@ export default {
         margin-bottom: 5px;
         margin-right: 5px;
         border-radius: 10px;
-        width: 48%;
+        width: 100%;
     }
 
     .nft-detail__type {
@@ -116,9 +117,9 @@ export default {
     }
 
     .nft-detail__traits{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
         margin-top: 20px;
     }
 
