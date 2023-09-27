@@ -35,10 +35,10 @@ export default {
     async created() {
       try {
         const identifier = this.$route.params.id
+
         this.nftData = await getAnNft(identifier);
         this.traits = this.nftData.traits
         this.owner = this.nftData.owners[0].address
-
 
       } catch (error) {
         console.error('Ошибка при получении данных из API:', error);

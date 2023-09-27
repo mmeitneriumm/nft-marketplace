@@ -4,7 +4,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta veritatis autem obcaecati harum officiis repudiandae tempore ipsam repellat deserunt nobis, quos corporis facere amet accusamus recusandae rem, cupiditate quia!</p>
         <!-- <vs-button color="primary" type="filled"  @click="$router.push('/gallery')">Смотреть коллекцию</vs-button> -->
         <div class="collection" v-if="collectionList">
-            <div class="collection-item" v-for="collection in collectionList" :key="collection.id" @click="$router.push('/gallery')">
+            <div class="collection-item" v-for="collection in collectionList" :key="collection.id" @click="$router.push(`/gallery/${collection.name}`)">
                 <div class="collection-item__number">{{ collection.id }}</div>
                 <div class="collection-item__preview"><img :src="collection.preview" alt="pics"></div>
                 <div class="collection-item__name">{{ collection.name }}</div>

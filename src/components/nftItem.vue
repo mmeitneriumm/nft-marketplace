@@ -1,6 +1,7 @@
 <template>
     <div class="nft-item">
-        <div class="nft-item__picture"><img :src="nft.image_url" alt="pics"></div>
+        <div v-if="nft.image_url" class="nft-item__picture"><img :src="nft.image_url" alt="pics"></div>
+        <div v-else class="nft-item__picture"><img src="https://www.arweave.net/lP-KnDNSeKG0u62w0UXTaI_SdD3FDA3RnpnOU5jfLY0?ext=png" alt="pics"></div>
         <div class="nft-item__description">
             <div class="nft-item__collection">{{ nft.collection }}</div>
             <div class="nft-item__name">{{ nft.name }}</div>
@@ -8,12 +9,13 @@
         </div>
         <div class="nft-item__button">
             <!-- <button>Details</button> -->
-            <vs-button color="primary" type="filled" @click="$router.push(`/gallery/${nft.identifier}`)">More details</vs-button>
+            <vs-button color="primary" type="filled" @click="redirectToDetail(nft.identifier)">More details</vs-button>
         </div>
     </div>
 </template>
 <script>
 import { vsButton } from 'vuesax3'
+import { useRouter } from 'vue-router'
 
 export default {
     components: vsButton,
@@ -21,6 +23,17 @@ export default {
         nft: {
             type: Object,
             required: true
+        }
+    },
+    setup() {
+        const router = useRouter()
+
+        const redirectToDetail = (id) => {
+        router.push({ name: 'Detail', params: { id } })
+        }
+
+        return {
+        redirectToDetail
         }
     }
 }
