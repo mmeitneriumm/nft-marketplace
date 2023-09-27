@@ -7,7 +7,7 @@
   
   <script>
   import nftList from '@/components/nftList.vue';
-  import { fetchNFTData } from '@/api/api'
+  import { fetchNFTData } from '@/api/getCollection'
   
   export default {
     name: 'GalleryCollection',

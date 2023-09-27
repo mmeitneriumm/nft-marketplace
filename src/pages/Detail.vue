@@ -20,6 +20,9 @@
     </div>
 </template>
 <script>
+
+import { getAnNft } from "@/api/getAnNft"
+
 export default {
     name: 'DetailNft',
     data(){
@@ -29,34 +32,18 @@ export default {
             traits: []
         }
     },
-    mounted(){
+    async created() {
+      try {
         const identifier = this.$route.params.id
-        
-        const apiUrl = `https://api.opensea.io/v2/chain/ethereum/contract/0xED5AF388653567Af2F388E6224dC7C4b3241C544/nfts/${identifier}`
-        const apiKey = process.env.VUE_APP_API_KEY;
-        const axiosConfig = {
-            method: 'GET',
-            headers: {
-                'X-API-KEY': apiKey,
-                accept: 'application/json'
-            }
-        }
+        this.nftData = await getAnNft(identifier);
+        this.traits = this.nftData.traits
+        this.owner = this.nftData.owners[0].address
 
-        fetch(apiUrl, axiosConfig)
-            .then((response) => response.json())
-            .then(response => {
-                this.nftData = response.nft
-                this.traits = this.nftData.traits
-                console.log('nftdata: ', this.nftData);
-                this.getOwner()
-            })
-            .catch((error) => {console.error(error)})
+
+      } catch (error) {
+        console.error('Ошибка при получении данных из API:', error);
+      }
     },
-    methods: {
-        getOwner(){
-            this.owner = this.nftData.owners[0].address
-        }
-    }
 }
 </script>
 <style>
@@ -100,7 +87,6 @@ export default {
     .nft-detail__trait{
         padding: 10px;
         background-color: #1e2023;
-        margin-bottom: 5px;
         margin-right: 5px;
         border-radius: 10px;
         width: 100%;
@@ -109,7 +95,7 @@ export default {
     .nft-detail__type {
         font-size: 12px;
         opacity: 0.4;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
     }
 
     .nft-detail__value {
@@ -121,6 +107,7 @@ export default {
         gap: 8px;
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
+        margin-bottom: 5px;
     }
 
     .nft-detail__button {
