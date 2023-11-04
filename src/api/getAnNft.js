@@ -1,7 +1,7 @@
 const apiKey = process.env.VUE_APP_API_KEY;
 
-export async function getAnNft(identifier) {
-    const apiUrl = `https://api.opensea.io/v2/chain/ethereum/contract/0xED5AF388653567Af2F388E6224dC7C4b3241C544/nfts/${identifier}`
+export async function getAnNft(identifier, contract) {
+    const apiUrl = `https://api.opensea.io/v2/chain/ethereum/contract/${contract}/nfts/${identifier}`
     const apiConfig = {
         method: 'GET',
         headers: {

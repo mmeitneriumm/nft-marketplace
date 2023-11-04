@@ -16,8 +16,10 @@
     },
   
     async created() {
+      const collectionName = this.$route.params.name
+      
       try {
-        const nftData = await fetchNFTData();
+        const nftData = await fetchNFTData(collectionName);
         this.nfts = nftData.nfts
         console.log(this.nfts)
       } catch (error) {

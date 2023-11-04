@@ -1,8 +1,8 @@
 const apiKey = process.env.VUE_APP_API_KEY;
 
-export async function fetchNFTData() {
+export async function fetchNFTData(name) {
   try {
-    const response = await fetch('https://api.opensea.io/v2/collection/azuki/nfts?limit=12', {
+    const response = await fetch(`https://api.opensea.io/v2/collection/${name}/nfts?limit=12`, {
       method: 'GET',
       headers: {
         'X-API-KEY': apiKey,

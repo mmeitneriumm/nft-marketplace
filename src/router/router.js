@@ -9,13 +9,21 @@ const routes = [
         component: MainPage
     },
     {
-        path: '/gallery',
-        component: Gallery
+        path: '/gallery/:name/',
+        component: Gallery,
+        // children: [
+        //     {
+        //         path: 'detail/:id',
+        //         component: Detail
+        //     }
+        // ],
     },
     {
-        path: '/gallery/:id',
-        component: Detail
-    }
+        path: '/gallery/:name/detail/:id',
+        name: 'Detail',
+        component: Detail,
+        props: true,
+      }
 ]
 
 const router = createRouter({

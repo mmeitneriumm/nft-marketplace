@@ -34,11 +34,12 @@ export default {
     },
     async created() {
       try {
-        const identifier = this.$route.params.id
-        this.nftData = await getAnNft(identifier);
+        const identifier = this.$route.params.id;
+        const contract = this.$route.query.contract;
+
+        this.nftData = await getAnNft(identifier, contract);
         this.traits = this.nftData.traits
         this.owner = this.nftData.owners[0].address
-
 
       } catch (error) {
         console.error('Ошибка при получении данных из API:', error);
@@ -62,6 +63,7 @@ export default {
 
     .nft-detail__picture img {
         border-radius: 20px;
+        max-width: 400px;
     }
 
     .nft-detail__info {
