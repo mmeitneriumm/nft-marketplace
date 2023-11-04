@@ -9,7 +9,7 @@
         </div>
         <div class="nft-item__button">
             <!-- <button>Details</button> -->
-            <vs-button color="primary" type="filled" @click="redirectToDetail(nft.identifier)">More details</vs-button>
+            <vs-button color="primary" type="filled" @click="redirectToDetail(nft.identifier, nft.contract)">More details</vs-button>
         </div>
     </div>
 </template>
@@ -28,8 +28,8 @@ export default {
     setup() {
         const router = useRouter()
 
-        const redirectToDetail = (id) => {
-        router.push({ name: 'Detail', params: { id } })
+        const redirectToDetail = (id, contract) => {
+            router.push({ name: 'Detail', params: { id }, query: {contract} })
         }
 
         return {

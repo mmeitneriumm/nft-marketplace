@@ -18,16 +18,16 @@ export default {
     data(){
         return {
             collectionList: [
-                {id: 1, name: 'boredapeyachtclub', floorPrice: '24.65 ETH', preview: 'https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=3840'},
-                {id: 2, name: 'degods', floorPrice: '3.4 ETH', preview: 'https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=3840'},
-                {id: 3, name: 'cryptopunks', floorPrice: '--', preview: 'https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?auto=format&dpr=1&w=3840'},
-                {id: 4, name: 'doodles-official', floorPrice: '1.23 ETH', preview: 'https://i.seadn.io/gae/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ?auto=format&dpr=1&w=3840'},
-                {id: 5, name: 'clonex', floorPrice: '1.21 ETH', preview: 'https://i.seadn.io/gae/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg?auto=format&dpr=1&w=3840'},
-                {id: 6, name: 'invisiblefriends', floorPrice: '0.29 ETH', preview: 'https://i.seadn.io/gae/lW22aEwUE0IqGaYm5HRiMS8DwkDwsdjPpprEqYnBqo2s7gSR-JqcYOjU9LM6p32ujG_YAEd72aDyox-pdCVK10G-u1qZ3zAsn2r9?auto=format&dpr=1&w=3840'},
-                {id: 7, name: 'mekaverse', floorPrice: '0.12 ETH', preview: 'https://i.seadn.io/gae/SFCYIPlcznnwFnI8Jd0dYIh5Atr6cp7HL4tWVWUl7_Onikq7uzQxKfTjdK2ptilWALg1ZBttSvzhXBCUbB9qoSlW9kS8qk1S3Z3xkU0?auto=format&dpr=1&w=3840'},
-                {id: 8, name: 'karafuru', floorPrice: '0.0764 ETH', preview: 'https://i.seadn.io/gae/VMG3VFncJG-pyqsRAwQznZGqYDw4RkPjJnJNJwrDERFhD4pWLh82q66JJ8Qh0vCPoovjoyigJwLqfFpa5tMAVV5ASIiR5nF1XkQFpec?auto=format&dpr=1&w=3840'},
-                {id: 9, name: 'psychedelics-anonymous-genesis', floorPrice: '0.19 ETH', preview: 'https://i.seadn.io/gae/9VndAx-5SvVdamB8KvABGcw2bdXMdeyEYdhHJ22WMV98C2yS85SDT5rnBtT0zOxVjeJ6KBz2fXKXcYSIXeOc7aGiU4i0Rx9IwaMfO9o?auto=format&dpr=1&w=3840'},
-                {id: 10, name: 'azuki', floorPrice: '3.9498 ETH', preview: 'https://i.seadn.io/gae/H8jOCJuQokNqGBpkBN5wk1oZwO7LM8bNnrHCaekV2nKjnCqw6UB5oaH8XyNeBDj6bA_n1mjejzhFQUP3O1NfjFLHr3FOaeHcTOOT?auto=format&dpr=1&w=3840'},
+                {id: 1, name: 'boredapeyachtclub', floorPrice: '24.65 ETH', address: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D', preview: 'https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=3840'},
+                {id: 2, name: 'degods', floorPrice: '3.4 ETH', address: '0x8821BeE2ba0dF28761AffF119D66390D594CD280', preview: 'https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=3840'},
+                {id: 3, name: 'cryptopunks', floorPrice: '--', address: '0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', preview: 'https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?auto=format&dpr=1&w=3840'},
+                {id: 4, name: 'doodles-official', floorPrice: '1.23 ETH', address: '0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e', preview: 'https://i.seadn.io/gae/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ?auto=format&dpr=1&w=3840'},
+                {id: 5, name: 'clonex', floorPrice: '1.21 ETH', address: '0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B', preview: 'https://i.seadn.io/gae/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg?auto=format&dpr=1&w=3840'},
+                {id: 6, name: 'invisiblefriends', floorPrice: '0.29 ETH', address: '0x59468516a8259058baD1cA5F8f4BFF190d30E066', preview: 'https://i.seadn.io/gae/lW22aEwUE0IqGaYm5HRiMS8DwkDwsdjPpprEqYnBqo2s7gSR-JqcYOjU9LM6p32ujG_YAEd72aDyox-pdCVK10G-u1qZ3zAsn2r9?auto=format&dpr=1&w=3840'},
+                {id: 7, name: 'mekaverse', floorPrice: '0.12 ETH', address: '0x9A534628B4062E123cE7Ee2222ec20B86e16Ca8F', preview: 'https://i.seadn.io/gae/SFCYIPlcznnwFnI8Jd0dYIh5Atr6cp7HL4tWVWUl7_Onikq7uzQxKfTjdK2ptilWALg1ZBttSvzhXBCUbB9qoSlW9kS8qk1S3Z3xkU0?auto=format&dpr=1&w=3840'},
+                {id: 8, name: 'karafuru', floorPrice: '0.0764 ETH', address: '0xd2F668a8461D6761115dAF8Aeb3cDf5F40C532C6', preview: 'https://i.seadn.io/gae/VMG3VFncJG-pyqsRAwQznZGqYDw4RkPjJnJNJwrDERFhD4pWLh82q66JJ8Qh0vCPoovjoyigJwLqfFpa5tMAVV5ASIiR5nF1XkQFpec?auto=format&dpr=1&w=3840'},
+                {id: 9, name: 'psychedelics-anonymous-genesis', floorPrice: '0.19 ETH', address: '0x75E95ba5997Eb235F40eCF8347cDb11F18ff640B', preview: 'https://i.seadn.io/gae/9VndAx-5SvVdamB8KvABGcw2bdXMdeyEYdhHJ22WMV98C2yS85SDT5rnBtT0zOxVjeJ6KBz2fXKXcYSIXeOc7aGiU4i0Rx9IwaMfO9o?auto=format&dpr=1&w=3840'},
+                {id: 10, name: 'azuki', floorPrice: '3.9498 ETH', address: '0xED5AF388653567Af2F388E6224dC7C4b3241C544', preview: 'https://i.seadn.io/gae/H8jOCJuQokNqGBpkBN5wk1oZwO7LM8bNnrHCaekV2nKjnCqw6UB5oaH8XyNeBDj6bA_n1mjejzhFQUP3O1NfjFLHr3FOaeHcTOOT?auto=format&dpr=1&w=3840'},
             ]
         }
     }

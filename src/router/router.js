@@ -21,7 +21,8 @@ const routes = [
     {
         path: '/gallery/:name/detail/:id',
         name: 'Detail',
-        component: Detail
+        component: Detail,
+        props: true,
       }
 ]
 
