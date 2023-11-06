@@ -26,7 +26,7 @@ export default {
     data(){
         return {
             collectionList: [
-                {id: 1, name: 'boredapeyachtclub', floorPrice: '4.65', address: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D', preview: 'https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=3840'},
+                {id: 1, name: 'boredapeyachtclub test', floorPrice: '4.65', address: '0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D', preview: 'https://i.seadn.io/gae/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB?auto=format&dpr=1&w=3840'},
                 {id: 2, name: 'degods', floorPrice: '3.4', address: '0x8821BeE2ba0dF28761AffF119D66390D594CD280', preview: 'https://i.seadn.io/gcs/files/c6cb0b1d6f2ab61c0efacf00e62e2230.jpg?auto=format&dpr=1&w=3840'},
                 {id: 3, name: 'cryptopunks', floorPrice: '6', address: '0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB', preview: 'https://i.seadn.io/gae/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE?auto=format&dpr=1&w=3840'},
                 {id: 4, name: 'doodles-official', floorPrice: '1.23', address: '0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e', preview: 'https://i.seadn.io/gae/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ?auto=format&dpr=1&w=3840'},
