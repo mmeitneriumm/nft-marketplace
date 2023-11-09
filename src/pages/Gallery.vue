@@ -7,7 +7,8 @@
   
   <script>
   import nftList from '@/components/nftList.vue';
-  import { fetchNFTData } from '@/api/getCollection'
+  import { fetchNFTData } from '@/api/getCollection';
+  import { getTraits } from '@/api/getTraits';
   
   export default {
     name: 'GalleryCollection',
@@ -21,7 +22,11 @@
       try {
         const nftData = await fetchNFTData(collectionName);
         this.nfts = nftData.nfts
-        console.log(this.nfts)
+        
+        const collectionTraits = await getTraits(collectionName);
+        this.traits = collectionTraits;
+
+        console.log(this.traits, "this.traits")
       } catch (error) {
         console.error('Ошибка при получении данных из API:', error);
       }
@@ -29,7 +34,8 @@
   
     data(){
       return {
-        nfts: []
+        nfts: [],
+        traits: []
       }
     }
   }

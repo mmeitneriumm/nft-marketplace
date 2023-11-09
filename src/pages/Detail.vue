@@ -38,6 +38,7 @@ export default {
         const contract = this.$route.query.contract;
 
         this.nftData = await getAnNft(identifier, contract);
+        console.log(this.nftData)
         this.traits = this.nftData.traits
         this.owner = this.nftData.owners[0].address
 
